@@ -1,11 +1,41 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import axios from 'axios'; // <--- YEH LINE MISSING THI
 import '../App.css';
 
 const Subscription = () => {
-  const handleSubscribe = () => {
-    // Abhi payment gateway nahi hai, isliye alert denge
-    alert("Payment gateway integration is pending. You will be redirected to Razorpay later!");
+
+  // Function ko component ke andar rakhna best practice hai
+  const handleSubscribe = async () => {
+    try {
+      const res = await axios.post('http://localhost:5000/api/payment/create-order', { amount: 59900 }); 
+      
+      const options = {
+        key: "rzp_test_1234567890abcdef", // Razorpay Test Key (Apni test key yahan daalo)
+        amount: res.data.amount,
+        currency: "INR",
+        name: "NewsPoint Premium",
+        description: "Annual Subscription",
+        order_id: res.data.id,
+        handler: function (response) {
+          alert(`Payment Successful! Payment ID: ${response.razorpay_payment_id}`);
+          // Yahan aap payment verify ka logic bana sakte ho
+        },
+        prefill: {
+          name: "Vipul",
+          email: "vipul@test.com",
+          contact: "9999999999"
+        },
+        theme: { color: "#D32F2F" }
+      };
+
+      const rzp1 = new window.Razorpay(options);
+      rzp1.open();
+        } catch (err) {
+      // alert("Payment initiation failed..."); // Ye hata do
+      console.error("Payment Error:", err);
+      alert("Payment gateway is currently in test mode. Keys required to proceed.");
+    }
   };
 
   return (

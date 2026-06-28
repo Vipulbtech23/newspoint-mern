@@ -27,7 +27,8 @@ app.use('/uploads', express.static('uploads'));
 app.use('/api/news', newsRoute);
 app.use('/api/auth', authRoute);
 app.use('/api/fetch', fetchNewsRoute);
-
+app.use('/api/payment', require('./routes/payment'));
+app.use('/api/ai', require('./routes/ai'));
 // 5. DATABASE CONNECT KARO
 mongoose.connect(process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/newspoint')
     .then(() => console.log('MongoDB Connected'))
