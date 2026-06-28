@@ -1,10 +1,12 @@
 📰 NewsPoint - Next-Gen AI-Powered  MERN Stack News Portal
+
 A highly scalable, interactive, and modern Indian news portal built with the MERN stack. Inspired by platforms like India Today and NDTV, featuring AI-driven summaries, Text-to-Speech, 3D animated UI elements, and a robust admin dashboard.
 
 MERNReactNode.jsOpenAIRazorpay
 
 ✨ Highlights & Key Features
 🤖 AI & Automation
+
 AI News Summarizer: Integrated OpenAI (ChatGPT) API to automatically generate 3-point Hindi-English summaries for long articles.
 Auto-Fetch System: Admins can fetch real-time live news directly into the database using the GNews API with one click.
 👨‍💻 User Experience (UX)
