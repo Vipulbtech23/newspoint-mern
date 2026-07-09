@@ -262,12 +262,24 @@ http://localhost:5173
 Add screenshots here
 
 - 🏠 Home Page
+  <img width="1920" height="1080" alt="Screenshot 2026-07-09 200948" src="https://github.com/user-attachments/assets/b9fe8b14-33b7-4bec-89a4-e05f7fec87c2" />
+
+
 - 📰 News Details
-- 🤖 AI Summary
+  <img width="1920" height="1080" alt="Screenshot 2026-07-09 201011" src="https://github.com/user-attachments/assets/a673382b-6d6b-4bf3-b2e5-2099232bd377" />
+
 - 👨‍💼 Admin Dashboard
+  <img width="1920" height="1080" alt="Screenshot 2026-07-09 201133" src="https://github.com/user-attachments/assets/998870e1-dbd5-40b3-8a2d-b1007b6e8f0d" />
+
 - 💳 Subscription Page
-- 🌙 Dark Theme
+  <img width="1920" height="1080" alt="Screenshot 2026-07-09 201202" src="https://github.com/user-attachments/assets/171560ce-e593-4867-8ee5-ab2ba437bba7" />
+
+- Manage News
+  <img width="1920" height="1080" alt="Screenshot 2026-07-09 201240" src="https://github.com/user-attachments/assets/e05460aa-4a93-4a5f-8fae-a60df263db59" />
+
 - 📰 Category Pages
+  <img width="1920" height="1080" alt="Screenshot 2026-07-09 201059" src="https://github.com/user-attachments/assets/53a1f1b9-1e22-4fd0-bb53-cc01f5f604d0" />
+
 
 ---
 
